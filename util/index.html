@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Index</title>
+</head>
+<body>
+  <h1>Index</h1>
+  <p class="content">
+
+  </p>
+  <script>
+    // emumerate window object keys
+    let keys = [];
+    for (let key in window) {
+      keys.push(key);
+    }
+
+    // set content
+    document.querySelector('.content').innerHTML = keys.join('<br>');
+
+  </script>
+</body>
+</html>
